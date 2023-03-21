@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3da1a747b2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="./img/travel.png"> <!-- favicon image made by Freepik-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="script" src="./js/main.js"/>
+    <title>FastMaps</title>
+
+</head>
+<body><div style="overflow-x:hidden;">
+    <div id="load">
+        <!-- Preloader animation code taken from https://codepen.io/animation-mhzg/pen/WNgpKxy -->
+    <div class="preloader">
+        <svg viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="big-circle" d="M101 51C101 78.6142 78.6142 101 51 101C23.3858 101 1 78.6142 1 51" stroke="#252525" stroke-width="2"/>
+            <path class="small-circle" d="M91 51C91 28.9086 73.0914 11 51 11C28.9086 11 11 28.9086 11 51" stroke="#252525" stroke-width="2"/>
+        </svg>
+    </div>
+</div>
+<nav class="navbar-mobile">
+    <div class="container" style="background-color: #333333;">  
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>          
+      <h1 class="logo">FastMaps</h1>
+      <ul class="nav navlinks-mobile">
+        <li><a href="./index.html"><h5>Home</h5></a></li>
+        <li><a href="./about.html"><h5>About</h5></a></li>
+        <li><a href="./price.html"><h5>Price</h5></a></li>
+        <li><a href="" id="contact-mobile"><h5>Contact</h5></a></li>
+      </ul>
+
+      
+    </div>
+  </nav>
+
+    <nav class="navbar" data-aos="slide-down" >
+        <div class="container">            
+          <h1 class="logo">FastMaps</h1>
+          <ul class="nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./price.html">Price</a></li>
+            <li><a href="#" id="contact">Contact</a></li>
+          </ul>
+
+        </div>
+      </nav>
+
+
+<!--Contact form pop up-->
+
+<div class="container-contact" >
+  <header>Contact Us Form</header>
+  <form action="#">
+    <div class="field">
+      <input type="text" placeholder="email" required>
+    </div>
+    
+    <div class="field">
+      <input type="text" placeholder="subject" required>
+    </div>
+    <div class="field">
+    <textarea id="mssg" placeholder="Write your query here" rows="4" cols="50" required></textarea>
+  </div>
+  <br><br><br><br><br>
+    <div class="field">
+      <input type="button" value="Submit" id="submit">
+    </div>
+  </form>
+</div>
+
+<!--Contact form pop up-->
+
+
+
+    
+      <!-- Showcase -->
+      <section class="section-a" data-aos="slide-up">
+ 
+
+        <div class="container">
+          <div>
+            <h1>Let's Explore with FastMaps.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              repudiandae rerum libero ipsum asperiores omnis mollitia, nostrum
+              commodi placeat ea itaque modi corrupti corporis nam voluptas aut
+              reprehenderit eaque culpa.
+            </p>
+            <a href="./about.html" class="btn">Read More</a>
+          </div>
+          <img src="./img/map.jpeg" alt="" style="border-radius: 10%;"/>
+        </div>
+      </section>
+    
+      <!-- Large Text -->
+      <section id="about" class="section-b" data-aos="zoom-out" data-aos-once='true'>
+        <div class="overlay">
+          <div class="section-b-inner py-5" style="justify-content: flex-start;">
+            <h3 class="text-2">Our customers are all over the Globe.</h3>
+            <h2 class="text-5 mt-1"></h2>
+        </div>
+        <div class="reviews">
+            <p class="mt-1">
+                    <div style="display: flex; flex-direction: column;justify-content: space-around;">
+                      <div class="counter" data-countto="500" data-duration="3000" data-aos="flip-up" data-aos-once='true'>0</div>
+                      <div class="content">More than 500+ downloads</div>
+                    </div>
+                    <div style="display: flex; flex-direction: column;justify-content: center;">
+                      <div class="counter" data-countto="4.0" data-duration="2000" data-aos="flip-up" data-aos-once='true'>0.0</div>
+                      <div class="content">Staified Customers with 4.0+ ratings</div>
+                    </div>                    
+                    <div style="display: flex; flex-direction: column;justify-content: center;">
+                      <div class="counter" data-countto="150" data-duration="3000" data-aos="flip-up" data-aos-once='true'>0</div>
+                      <div class="content">Operating in 150 countries</div>
+                    </div>
+                
+            </p>
+
+        </div> 
+            
+        </div>
+        
+      </section>
+    <!--People reviews and ratings section-->
+      <section class="section-c" id="reviews" >
+        <section id="testimonials" data-aos="slide-up ">
+            
+            <div class="testimonial-heading">
+                <span>Comments</span>
+                <h4>Clients Says</h4>
+            </div>
+            <!--testimonials-box-container------>
+            <div class="testimonial-box-container">
+                <!--BOX-1-------------->
+                <div class="testimonial-box" data-aos="flip-up" data-aos-once='true'>
+                    
+                    <div class="box-top">
+                        
+                        <div class="profile">
+                            
+                            <div class="profile-img">
+                                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                            </div>
+                            <div class="name-user">
+                                <strong>Naruto Uzumaki</strong>
+                                <span>@naruto</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i><!--Empty star-->
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                    </div>
+                </div>
+                <!--BOX-2-------------->
+                <div class="testimonial-box" data-aos="flip-up" data-aos-once='true'>
+                    <div class="box-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                            </div>
+                            <div class="name-user">
+                                <strong>Ichigo Kurosaki</strong>
+                                <span>@ichigo</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                    </div>
+                </div>
+                <!--BOX-3-------------->
+                <div class="testimonial-box" data-aos="flip-up" data-aos-once='true'>
+                    <div class="box-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                            </div>
+                            <div class="name-user">
+                                <strong>Sasuke Uchiha</strong>
+                                <span>@sasuke</span>
+                            </div>
+                        </div>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                    </div>
+                </div>
+                <!--BOX-4-------------->
+                <div class="testimonial-box" data-aos="flip-up" data-aos-once='true'>
+                    <div class="box-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                            </div>
+                            <div class="name-user">
+                                <strong>Itachi Uchiha</strong>
+                                <span>@itachi</span>
+                            </div>
+                        </div>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                    </div>
+                </div>
+            </div>
+          </section>
+      </section>
+    
+      <!-- Footer -->
+      <footer class="section-footer py-4 bg-primary">
+        <div class="container">
+          <div>
+            <h2 class="text-2 mb-1">FastMaps.</h2>
+            <a href="https://twitter.com/i/status/1635115647360438272" target="_blank">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/animevibesnp/videos/1335150697234869" target="_blank">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/shorts/9i50d9wlAVI" target="_blank">
+              <i class="fab fa-youtube fa-2x"></i>
+            </a>
+          </div>
+          <div>
+            <h3>Company Info</h3>
+            <ul>
+              <li><a href="#">All Products</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Blog Posts</h3>
+            <ul>
+              <li><a href="#">User Manual.</a></li>
+              <li><a href="#">API docs</a></li>
+              <li><a href="#">FastMaps usage.</a></li>
+              <li><a href="#">Explore with us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Subscribe</h3>
+            <p>
+              Subscribe to our newsletters to get regular updates of our products.
+            </p>
+            <form name="email-form">
+              <div class="email-form">
+                <span class="form-control-wrap"
+                  ><input
+                    type="email"
+                    name="email"
+                    id="email"
+                    size="40"
+                    class="form-control"
+                    placeholder="E-mail"/></span
+                ><button type="submit" value="Submit" onclick="alert('Your email has been submitted')" class="form-control submit">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+
+
+      <script>
+        var loader = document.getElementById("load");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+        $(".counter").each(function () {
+  var $this = $(this),
+    countTo = $this.attr("data-countto");
+  countDuration = parseInt($this.attr("data-duration"));
+  $({ counter: $this.text() }).animate(
+    {
+      counter: countTo
+    },
+    {
+      duration: countDuration,
+      easing: "linear",
+      step: function () {
+        $this.text(Math.floor(this.counter));
+      },
+      complete: function () {
+        $this.text(this.counter);
+      }
+    }
+  );
+});
+
+const toggleButton = document.getElementsByClassName("toggle-button")[0]
+  const navbarlinks = document.getElementsByClassName("navlinks-mobile")[0]
+
+  toggleButton.addEventListener('click', function() {
+    navbarlinks.classList.toggle('active')
+  })
+  
+
+  
+  document.getElementById("contact").addEventListener("click", () => {
+    document.querySelector(".container-contact").style.display="flex";
+  })
+
+  
+  
+  document.getElementById("contact-mobile").addEventListener("click", () => {
+    document.querySelector(".container-contact").style.display="flex";
+  })
+
+  document.getElementById("submit").addEventListener("click",() => {
+    alert("Your query has been submitted")
+    location.reload();
+  })
+
+
+  
+      </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+
+      
+</div>   
+</body>
+</html>
