@@ -19,4 +19,15 @@ ul li ul { margin-bottom:0;margin-left:35px;font-weight:300;}
     margin-bottom: 10%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), 0 16px 48px rgba(0, 0, 0, 0.2);
   }
+  .donate-box{
+    display: flex;flex-direction: row; justify-content: space-between;align-items: center;
+  }
   
+@media (max-width: 800px) {
+
+  .donate-box{
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+  
+}
